@@ -11,7 +11,7 @@ Dataset put in a tidy format.
 - income_range, string
 - frequency, integer
 
-**Project 2 (Billboard weekly music rank dataset)**
+**Project 1.2 (Billboard weekly music rank dataset)**
 
 This dataset was in an untidy format and the goal was to reshape this dataset.
 **The final dataframe includes**
@@ -29,5 +29,10 @@ music['week'] = music['week'].str.extract('(\d+)').astype(int)
 - rank, float. Ideally, we should use an int data type for the rank but we have nulls in that column. The Pandas library does not allow you to have an integer column with nulls.
 - entered_to_peak, int: This is a column with the difference between the date the song peaked and the date it entered into the billboard chart.
 
+**Project 2 (basic ETL pipeline to read data transform and load output into prescribed location)**
+
+**Project 3 (Batch Processing for data mining/ investigating top companies within various cities in the US)**
+
+**Project 4 (Database connection using JDBC. connecting pyspark to postgresql...sql scripts inclusive)**
 
 
